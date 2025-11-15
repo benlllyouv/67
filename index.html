@@ -1,55 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vampire Diaries — Chaotic Quiz</title>
+  <title>Vampire Diaries — INSANE Quiz (Hybrid Chaos)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app" class="container">
-    <header>
-      <h1>🦇 Vampire Diaries — Chaotic Quiz</h1>
-      <p class="sub">Hybrid Chaos: Damon roasts + Katherine laughs + bats + drama 🍷🩸</p>
+  <div class="wrap">
+    <header class="head">
+      <h1>🦇 Vampire Diaries — INSANE Quiz</h1>
+      <p class="tag">Hybrid Chaos: Damon roasts • Katherine laughs • bats • blood • you're warned</p>
     </header>
 
-    <main>
-      <div id="quiz-card" class="card">
-        <div id="progress" class="progress">Question <span id="qnum">1</span>/<span id="qtotal">1</span></div>
+    <main class="main">
+      <section id="quiz" class="card">
+        <div class="meta">
+          <span id="progress">Question <b id="qnum">1</b>/<b id="qtotal">20</b></span>
+          <span id="timer" class="timer">⏱ 25s</span>
+        </div>
 
-        <div id="question" class="question">Loading...</div>
+        <div id="question" class="question">Loading insane question...</div>
 
         <div id="answers" class="answers"></div>
 
         <div class="controls">
-          <button id="next-btn" class="btn hidden">Next</button>
-          <button id="restart-btn" class="btn hidden">Restart</button>
+          <button id="next" class="btn hidden">Next</button>
+          <button id="finish" class="btn hidden">Finish</button>
         </div>
-      </div>
+      </section>
 
-      <div id="result-card" class="card hidden">
+      <section id="result" class="card hidden">
         <h2 id="result-title">Result</h2>
-        <p id="result-text"></p>
-        <button id="share-btn" class="btn">Share the chaos</button>
-        <button id="play-again-btn" class="btn">Play Again</button>
-      </div>
+        <p id="result-msg"></p>
+        <div class="result-actions">
+          <button id="retry" class="btn">Try Again (You will be roasted)</button>
+          <button id="copy" class="btn">Copy Score</button>
+        </div>
+      </section>
     </main>
 
-    <aside class="decor">
-      <div id="bat-layer"></div>
-    </aside>
+    <div id="bat-layer"></div>
 
-    <footer>
-      <small>Made chaotic — not responsible for fictional emotional damage 😏</small>
+    <!-- audio -->
+    <audio id="snd-correct" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+    <audio id="snd-wrong" src="https://www.soundjay.com/human/sounds/boo-01.mp3" preload="auto"></audio>
+    <audio id="snd-laugh" src="https://www.soundjay.com/human/sounds/laugh-1.mp3" preload="auto"></audio>
+    <audio id="snd-heart" src="https://www.soundjay.com/misc/sounds/heartbeat-01.mp3" preload="auto"></audio>
+
+    <footer class="foot">
+      <small>Insane mode: deep lore. Not responsible for Damon-level humiliation.</small>
     </footer>
   </div>
-
-  <!-- Sounds -->
-  <audio id="s-ding" src="https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" preload="auto"></audio>
-  <audio id="s-wrong" src="https://www.soundjay.com/human/sounds/boo-01.mp3" preload="auto"></audio>
-  <audio id="s-laugh" src="https://www.soundjay.com/human/sounds/laugh-1.mp3" preload="auto"></audio>
-  <audio id="s-heart" src="https://www.soundjay.com/misc/sounds/heartbeat-01.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
