@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vampire Diaries — Chaotic Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <header>
+      <h1>🦇 Vampire Diaries — Chaotic Quiz</h1>
+      <p class="sub">Hybrid Chaos: Damon roasts + Katherine laughs + bats + drama 🍷🩸</p>
+    </header>
+
+    <main>
+      <div id="quiz-card" class="card">
+        <div id="progress" class="progress">Question <span id="qnum">1</span>/<span id="qtotal">1</span></div>
+
+        <div id="question" class="question">Loading...</div>
+
+        <div id="answers" class="answers"></div>
+
+        <div class="controls">
+          <button id="next-btn" class="btn hidden">Next</button>
+          <button id="restart-btn" class="btn hidden">Restart</button>
+        </div>
+      </div>
+
+      <div id="result-card" class="card hidden">
+        <h2 id="result-title">Result</h2>
+        <p id="result-text"></p>
+        <button id="share-btn" class="btn">Share the chaos</button>
+        <button id="play-again-btn" class="btn">Play Again</button>
+      </div>
+    </main>
+
+    <aside class="decor">
+      <div id="bat-layer"></div>
+    </aside>
+
+    <footer>
+      <small>Made chaotic — not responsible for fictional emotional damage 😏</small>
+    </footer>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="s-ding" src="https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" preload="auto"></audio>
+  <audio id="s-wrong" src="https://www.soundjay.com/human/sounds/boo-01.mp3" preload="auto"></audio>
+  <audio id="s-laugh" src="https://www.soundjay.com/human/sounds/laugh-1.mp3" preload="auto"></audio>
+  <audio id="s-heart" src="https://www.soundjay.com/misc/sounds/heartbeat-01.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
